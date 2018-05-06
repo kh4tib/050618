@@ -49,9 +49,9 @@ body {
   .main .list__checkbox {
     display: flex;
     align-items: flex-end;
-    margin-top: 2rem;
     border-top: 1px solid slateblue;
-    padding: 2rem 0; }
+    border-bottom: 1px solid slateblue;
+    padding: 1rem 0; }
     .main .list__checkbox label {
       color: #fff;
       margin-left: .5rem; }
@@ -59,8 +59,6 @@ body {
     position: relative;
     width: 100%;
     padding-top: 2rem;
-    border-top: 1px solid slateblue;
-    border-bttoom: 1px solid slateblue;
     display: flex; }
     .main .list__add input {
       width: 70%;
