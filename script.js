@@ -32,6 +32,11 @@ addForm.addEventListener("submit", function(ev){
     ev.preventDefault();
     let value = addForm.querySelector('input[type="text"]').value;
 
+    if (value == "") {
+        let foo = prompt("add value");
+        value = foo;
+    }
+
     // create elements
 
     let li = document.createElement("li");
