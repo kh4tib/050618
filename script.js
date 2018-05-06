@@ -23,3 +23,33 @@ checkBox.addEventListener("change", function(ev){
         list.style.display = "block";
     }
 });
+
+// Add Item to List
+
+let addForm = document.forms["list__add"];
+
+addForm.addEventListener("submit", function(ev){
+    ev.preventDefault();
+    let value = addForm.querySelector('input[type="text"]').value;
+
+    // create elements
+
+    let li = document.createElement("li");
+    let inputName = document.createElement("div");
+    let deleteBtn = document.createElement("div")
+
+    // elements content
+    inputName.textContent = value;
+    deleteBtn.textContent = "Delete";
+
+    // append elements
+
+    li.appendChild(inputName);
+    li.appendChild(deleteBtn);
+    list.appendChild(li);
+    
+    // adding classes
+    li.classList.add("container__item");
+    deleteBtn.classList.add("item__delete");
+    inputName.classList.add("item__name");
+});
